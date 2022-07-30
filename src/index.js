@@ -1,11 +1,4 @@
 import Phaser from 'phaser';
-import brown from './Free/Background/Brown.png';
-import star from './assets/star.png';
-import pinkman from './Free/Main Characters/Pink Man/Idle.png';
-import pinkmanrun from './Free/Main Characters/Pink Man/Run.png'
-import pinkmanrunleft from './Free/Main Characters/Pink Man/Runleft.png'
-import block from './Free/Terrain/Block.png'
-import spikes from './Free/Traps/Spiked Ball/Spiked Ball.png'
 
 let movingPlatform;
 
@@ -15,19 +8,19 @@ class MyGame extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('brown', brown);
-    this.load.image('star', star);
-    this.load.image('block',block)
-    this.load.image('spikes',spikes)
-    this.load.spritesheet('pinkman', pinkman, {
+    this.load.image('brown', '/src/Free/Background/Brown.png');
+    this.load.image('star', '/src/assets/star.png');
+    this.load.image('block','/src/Free/Terrain/Block.png')
+    this.load.image('spikes','/src/Free/Traps/Spiked Ball/Spiked Ball.png')
+    this.load.spritesheet('pinkman', '/src/Free/Main Characters/Pink Man/Idle.png', {
       frameWidth: 32,
       frameHeight: 32,
     });
-    this.load.spritesheet('pinkmanrun', pinkmanrun, {
+    this.load.spritesheet('pinkmanrun', '/src/Free/Main Characters/Pink Man/Run.png', {
       frameWidth: 32,
       frameHeight: 32,
     });
-    this.load.spritesheet('pinkmanrunleft', pinkmanrunleft, {
+    this.load.spritesheet('pinkmanrunleft', '/src/Free/Main Characters/Pink Man/Runleft.png', {
       frameWidth: 32,
       frameHeight: 32,
     });
